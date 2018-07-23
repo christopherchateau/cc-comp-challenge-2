@@ -1,5 +1,370 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  min-width: 310px;
+}
 
-.container {
+.page-header {
+  background-color: #2b2b2b;
+  height: 210px;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-areas: 
+    '. admin'
+    'nav two-win'
+}
+
+ul {
+  padding-left: 0px;
+  color: #919191;
+  list-style-type: none;
+  font-size: 20px;
+  width: 578px;
+  grid-area: nav;
+}
+
+.two-win-container {
+  grid-area: two-win;
+
+}
+
+.two-win--logo {
+  float: right;
+  height: 116px;
+  margin-right: 25px;
+  position: relative;
+  bottom: 40px;
+
+}
+
+.header-logo--container {
+  grid-area: admin;
+  margin-right: 30px;
+  position: relative;
+  bottom: 10px;
+  height: 105px;
+}
+
+li {
+  display: inline-block;
+  margin-left: 40px;
+
+}
+
+h1 {
+  font-size: 54px;
+  color: #919191;
+  margin-left: 25px;
+}
+
+main {
+  background-color: #efefef;
+  position: absolute;
+  width: 100%;
+}
+
+.card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-gap: 20px 5px;
+  width: 97%;
+  margin: 0 auto;
+}
+
+.admin-username {
+  color: #299fe1;
+  font-size: 20px;
+  position: absolute;
+  right: 35px;
+  top: 8px;
+}
+
+.admin-username:hover {
+  color: white;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+ }
+
+.user-icon {
+  height: 36px;
+  position: absolute;
+  bottom: -2px;
+  right: 180px;
+}
+
+.down-arrow {
+  height: 25px;
+  position: absolute;
+  bottom: 1px;
+  left: 180px;
+}
+
+.connected-dots-icon {
+  height: 25px;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.playlist-icon {
+  height: 25px;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.my-vids-icon {
+  height: 30px;
+  position: relative;
+  top: 6px;
+  margin-right: 10px;
+}
+
+.shares-nav {
+  color: white;
+}
+
+.playlist-nav:hover, 
+.my-vids-nav:hover {
+  color: white;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.card {
+  background-color: white;
+  height: 450px;
+  width: 320px;
+  box-shadow: 0 0 5px silver;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 10px black;
+  background-color: #e2e2e2;
+  transition: all .5s ease-in-out;
+}
+
+article > header {
+  height: 160px;
+  opacity: .9;
+
+}
+
+h5 {
+  display: inline-block;
+  color: #F4F4F4;
+  position: relative;
+  bottom: 172px;
+  left: 265px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.view-count {
+  font-size: 30px;
+}
+
+h3 {
+  color: #4E4E4E;
+  display: inline-block;
+  font-weight: 500;
+  margin-left: 15px;
+  line-height: 20px;
+}
+
+.card-main {
+  height: 290px;
+}
+
+.date-text {
+  font-size: 12px;
+  color: #b0b0b0;
+  margin-left: 1px;
+}
+
+.link-text {
+  font-size: 12px;
+  color: #b0b0b0;
+  word-wrap: all;
+}
+
+.playlist-text{
+  font-size: 12px;
+}
+
+.playlist-text:hover {
+  color: white;
+}
+
+.chuck {
+  width: 320px;
+  height: 160px;
+  filter: brightness(80%);
+}
+
+.next-icon {
+  height: 70px;
+  position: absolute;
+  bottom: 370px;
+  right: 240px;
+}
+
+.card-link--section {
+  background-color: #efefef;
+  height: 60px;
+  width: 90%;
+  margin: 5px auto;
+}
+
+.playlist-name{
+  position: relative;
+  bottom: 100px;
+}
+
+.attachemnts-text {
+  font-size: 12px;
+  position: relative;
+  right: 112px;
+  bottom: 68px;
+}
+
+.attachment-num {
+  color: #299fe1;
+  font-size: 38px;
+  position: relative;
+  left: -200px;
+  bottom: 28px;
+}
+
+.page-bottom {
+  height: 120px;
+  width: 100%;
+  background-color: #efefef;;
+}
+
+  @media screen and (max-width: 1032px) {
+
+    .page-header {
+      grid-template-areas: 
+        'nav admin'
+        'nav two-win'
+    }
+
+    ul {
+      width: 400px;
+      line-height: 57px;
+      position: absolute;
+      bottom: 22px;
+    }
+
+    li {
+      display: block;
+    }
+
+    .two-win-logo {
+      position: absolute;
+      height: 116px;
+      right: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 685px) {
+
+    .page-header {
+      height: 105px;
+      grid-template-areas: 
+        'nav admin'
+        'nav two-win'
+    }
+
+    .header-logo--container {
+      height: 60px;
+    }
+
+    h1 {
+      font-size: 34px;
+      text-align: center;
+    }
+
+    ul {
+      width: 155px;
+      margin: 0 auto;
+      font-size: 14px;
+      padding: 0;
+      line-height: 10px
+    }
+
+    li {
+      padding-left: 0;
+      height: 30px;
+      margin-left: 10px;
+    }
+
+    .card-container {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px 0px;
+      width: 100%;
+    }
+
+    .card {
+      width: 300px;
+    }
+
+    .chuck {
+      width: 300px;
+    }
+
+    .next-icon {
+      right: 220px;
+    }
+  
+    h5 {
+      left: 250px;
+    }
+
+    .user-icon {
+      height: 26px;
+      bottom: 15px;
+      left: 158px;
+    }
+
+    .admin-username,
+    .admin-username:hover {
+      color: #2b2b2b;
+    }
+
+    .down-arrow {
+      left: 192px;
+      bottom: 14px;
+    }
+
+    .two-win--logo {
+      height: 65px;
+      bottom: 22px;
+      margin-right: 10px;
+    }
+
+    .connected-dots-icon {
+      height: 15px;
+      margin-right: 5px;
+    }
+
+    .playlist-icon {
+      height: 15px;
+      margin-right: 5px;
+    }
+
+    .my-vids-icon {
+      height: 15px;
+      margin-right: 5px;
+      top: 0;
+    }
+
 }
