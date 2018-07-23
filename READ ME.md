@@ -11,4 +11,4 @@ Website is responsive across various browsers, devices and screen sizes.
 
 ## My Version:
 
-![static-comp-challenge-2](https://github.com/christopherchateau/cc-comp-challenge-2/blob/master/cc-comp-challenge-2.png)
+![static-comp-challenge-2](https://github.com/christopherchateau/cc-comp-challenge-2/blob/master/cc-comp-challenge-2-ss.png)
