@@ -278,6 +278,8 @@ h3 {
   @media screen and (max-width: 685px) {
 
     .page-header {
+      position: fixed;
+      z-index: 2;
       height: 105px;
       grid-template-areas: 
         'nav admin'
@@ -310,13 +312,10 @@ h3 {
     .card-container {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       grid-gap: 20px 5px;
-      width: 100%;
+      margin-top: 60px;
     }
 
-    .card {
-      width: 300px;
-    }
-
+    .card ,
     .chuck {
       width: 300px;
     }
