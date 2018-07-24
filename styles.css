@@ -310,7 +310,7 @@ h3 {
     }
 
     .card-container {
-      grid-auto-columns: 1fr;
+      grid-template-columns: 1fr;
       grid-gap: 20px 5px;
       margin-top: 60px;
     }
